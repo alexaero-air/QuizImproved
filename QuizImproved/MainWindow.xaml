@@ -1,0 +1,167 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-x:Namespace:Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="916" Width="1162" Background="#FFD4D4D4">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Margin="457,0,457,405" FontSize="20"><Run Language="ru-ru" Text="Тест &quot;Какой ты геогессер"/><Run Language="ru-ru" Text="&quot;"/></TextBlock>
+        <StackPanel Margin="20">
+            <StackPanel Margin="0, 20, 0, 20">
+                <TextBlock Text="1. Какой язык чаще всего встречается на дорожных знаках в Бразилии?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q1" >
+                    <ComboBoxItem Content="Испанский"/>
+                    <ComboBoxItem Content="Португальский"/>
+                    <ComboBoxItem Content="Итальянский"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="2. В какой стране жёлтые номерные знаки с чёрными буквами?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q2" >
+                    <ComboBoxItem Content="Нидерланды"/>
+                    <ComboBoxItem Content="Германия"/>
+                    <ComboBoxItem Content="Польша"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="3. Где встречаются дороги с левосторонним движением?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q3" >
+                    <ComboBoxItem Content="Великобритания"/>
+                    <ComboBoxItem Content="Франция"/>
+                    <ComboBoxItem Content="США"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="4. Какой континент чаще всего имеет красную землю и пейзажи саванны?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q4" >
+                    <ComboBoxItem Content="Африка"/>
+                    <ComboBoxItem Content="Европа"/>
+                    <ComboBoxItem Content="Южная Америка"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="5. В какой стране можно увидеть дорожные знаки с кленовым листом?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q5" >
+                    <ComboBoxItem Content="США"/>
+                    <ComboBoxItem Content="Канада"/>
+                    <ComboBoxItem Content="Австралия"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="6. Где чаще всего встречаются знаки с кириллицей?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q6" >
+                    <ComboBoxItem Content="C. Македония"/>
+                    <ComboBoxItem Content="Греция"/>
+                    <ComboBoxItem Content="Чехия"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="7. Какой регион известен наличием домов с белыми стенами и голубыми крышами?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q7" >
+                    <ComboBoxItem Content="Греция"/>
+                    <ComboBoxItem Content="Италия"/>
+                    <ComboBoxItem Content="Турция"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="8. Где чаще всего встречаются дороги с жёлтой центральной линией и зелёными указателями?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q8" >
+                    <ComboBoxItem Content="США"/>
+                    <ComboBoxItem Content="Германия"/>
+                    <ComboBoxItem Content="Япония"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="9. Где чаще всего встречаются знаки с вязью?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q9" >
+                    <ComboBoxItem Content="Саудовская Аравия"/>
+                    <ComboBoxItem Content="Индия"/>
+                    <ComboBoxItem Content="Турция"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="10. В какой стране можно заметить красные телефонные будки?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q10" >
+                    <ComboBoxItem Content="Великобритания"/>
+                    <ComboBoxItem Content="Франция"/>
+                    <ComboBoxItem Content="Ирландия"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="11. Какой континент чаще всего имеет дороги без асфальта, но с множеством мотоциклов?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q11" >
+                    <ComboBoxItem Content="Азия"/>
+                    <ComboBoxItem Content="Европа"/>
+                    <ComboBoxItem Content="Северная Америка"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="12. В какой стране на дорожных знаках английский язык?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q12" >
+                    <ComboBoxItem Content="Нигерия"/>
+                    <ComboBoxItem Content="Египет"/>
+                    <ComboBoxItem Content="ЮАР"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="13. В какой стране можно заметить зелёные почтовые ящики?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q13" >
+                    <ComboBoxItem Content="Ирландия"/>
+                    <ComboBoxItem Content="Италия"/>
+                    <ComboBoxItem Content="Испания"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="14. В какой стране есть кенгуру на дорожных знаках?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q14" >
+                    <ComboBoxItem Content="ЮАР"/>
+                    <ComboBoxItem Content="Ботсвана"/>
+                    <ComboBoxItem Content="Австралия"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Margin="0, 0, 0, 10">
+                <TextBlock Text="15. В каком городе находится мост Золотые Ворота?" 
+                           FontSize="16" FontWeight="Bold"/>
+                <ComboBox Width="100" Height="20" MaxDropDownHeight="60" x:Name="Q15" >
+                    <ComboBoxItem Content="Чикаго"/>
+                    <ComboBoxItem Content="Нью-Йорк"/>
+                    <ComboBoxItem Content="Сан-Франциско"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel>
+                <Button Content="Завершить" Width="500" Height="50" Click="Button_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
