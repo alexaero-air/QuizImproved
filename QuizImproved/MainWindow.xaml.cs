@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using Microsoft.Win32;
 
 namespace Test
 {
@@ -28,6 +30,7 @@ namespace Test
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int points = 0;
+            string path = "C:\\Users\\79024\\Downloads\\results.txt";
 
             if (Q1.SelectedItem is ComboBoxItem q1 && q1.Content.ToString() == "Португальский") points = points + 1;
             if (Q2.SelectedItem is ComboBoxItem q2 && q2.Content.ToString() == "Нидерланды") points = points + 1;
@@ -49,6 +52,8 @@ namespace Test
             if (points <= 5) { MessageBox.Show($"Вы набрали {points} баллов, вы начинающий геогессер"); }
             if (points <= 10 & points > 5) { MessageBox.Show($"Вы набрали {points} баллов, вы средний геогессер"); }
             if (points <= 15 & points > 10) { MessageBox.Show($"Вы набрали {points} баллов, вы крутой геогессер"); }
+            string text = $"Вы набрали {points} баллов";
+            File.WriteAllText(path, text);
         }
     }
 }
